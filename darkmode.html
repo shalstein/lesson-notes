@@ -5,18 +5,18 @@
     <title>HTML Playground</title>
     <script>
       function handleOnClick() {
-  const mainElement = document.getElementsByTagName('main')[0];
-  const paragraphElement = document.createElement('p');
-  const text = 'Develop. Preview. Ship.';
-  const paragraphContent = document.createTextNode(text);
-  paragraphElement.appendChild(paragraphContent);
-  mainElement.appendChild(paragraphElement);
+        const mainElement = document.getElementsByTagName("main")[0];
+        const paragraphElement = document.createElement("p");
+        const text = "Develop. Preview. Ship.";
+        const paragraphContent = document.createTextNode(text);
+        paragraphElement.appendChild(paragraphContent);
+        mainElement.appendChild(paragraphElement);
       }
     </script>
   </head>
   <body>
     <h1>HTML Playground</h1>
-    <main ></main>
+    <main></main>
     <label for="dark">Dark Mode</label>
     <input
       onclick="handleOnClick(event.target.value)"
