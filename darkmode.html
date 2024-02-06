@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Playground</title>
+    <script>
+      function handleOnClick() {
+  const mainElement = document.getElementsByTagName('main')[0];
+  const paragraphElement = document.createElement('p');
+  const text = 'Develop. Preview. Ship.';
+  const paragraphContent = document.createTextNode(text);
+  paragraphElement.appendChild(paragraphContent);
+  mainElement.appendChild(paragraphElement);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>HTML Playground</h1>
+    <main ></main>
+    <label for="dark">Dark Mode</label>
+    <input
+      onclick="handleOnClick(event.target.value)"
+      name="darkmode"
+      type="radio"
+      value="Dark"
+      id="dark"
+    />
+    <br />
+    <label for="light">Light Mode</label>
+    <input
+      onclick="handleOnClick(event.target.value)"
+      type="radio"
+      value="Light"
+      name="darkmode"
+      id="light"
+    />
+  </body>
+</html>
